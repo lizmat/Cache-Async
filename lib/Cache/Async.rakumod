@@ -1,8 +1,57 @@
-unit class Cache::Async;
+unit class Cache::Async:ver<0.3.0>:auth<zef:lizmat>;
 
 =begin pod
 
-=TITLE Cache::Async -- A Concurrent and Asynchronous Cache for Perl 6
+=head1 NAME
+
+Cache::Async -- A Concurrent and Asynchronous Cache
+
+=head1 SYNOPSIS
+
+=begin code :lang<raku>
+
+my $cache = Cache::Async.new(max-size => 1000, producer => sub ($k) { ... });
+say await $cache.get('key234');
+
+=end code
+
+=head1 FEATURES
+
+=item Producer function that gets passed in on construction and that gets called by cache on misses
+
+=item Cache size and maximum entry age can be limited
+
+=item Cache allows refreshing of entries even before they have expired
+
+=item Calls producer async and returns promise to result, perfect for usage in an otherwise async or reactive system
+
+=item Transparent support for producers that return promises themselves
+
+=item Extra args can be passed through to producer easily
+
+=item Jitter for refresh and expiry to smooth out producer calls over time
+
+=item Locked internally so it can be used from multiple threads or a thread pool, but no lock help while calling the producer function.
+
+=item Propagates exceptions from producer transparently
+
+=item Get entry from cache only if present, without loading/refreshing.
+
+=item Configurably, Nil values can be passed through without caching them
+
+=item Monitoring of hit rate 
+
+=head2 Upcoming Features
+
+=item Optimizations of the async producer case
+
+=item Object lifetimes can be restricted by producer function
+
+=head1 BLOG
+
+I also have a short article that cache users might find interesting L<https://github.com/Raku/CCR/blob/main/Remaster/Robert%20Lemmen/The%20Surprising%20Sanity%20of%20Using%20a%20Cache%20but%20Not%20Updating%20It.md|The Surprising Sanity of Using a Cache but Not Updating It>.
+
+=head1 DESCRIPTION
 
 This module tries to implement a cache that can be used easily in otherwise 
 async or reactive system. As such it only returns Promises to results which 
@@ -430,3 +479,22 @@ method hits-misses() {
     atomic-fetch-sub($!misses, $current-misses);
     return ($current-hits, $current-misses);
 }
+
+=begin pod
+
+=head1 AUTHORS
+
+Robert Lemmen (2018-2020), Elizabeth Mattijsen <liz@raku.rocks> (2021-)
+
+Source can be located at: https://github.com/lizmat/Cache-Async . Comments and
+Pull Requests are welcome.
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2018-2020 Robert Lemmen, 2021 Elizabeth Mattijsen
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
+=end pod
+
+# vim: expandtab shiftwidth=4
