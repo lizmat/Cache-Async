@@ -10,4 +10,4 @@ plan 1;
 
 is((await $cache.get("X")), 'delayed X', "cache with async producer produces correct result");
 
-done-testing;
+# vim: expandtab shiftwidth=4

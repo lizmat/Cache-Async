@@ -89,4 +89,4 @@ subtest {
 }
 is($trace, 'ABCDBA', "pausing between gets evicts the older entries");
 
-done-testing;
+# vim: expandtab shiftwidth=4

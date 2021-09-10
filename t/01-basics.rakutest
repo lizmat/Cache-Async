@@ -35,4 +35,4 @@ lives-ok({ Cache::Async.new(max-age => Duration.new(3), refresh-after => Duratio
     jitter => Duration.new(1) }, 
     "c'tor with jitter < refresh-after < max-age does not die");
 
-done-testing;
+# vim: expandtab shiftwidth=4

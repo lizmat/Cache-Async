@@ -23,4 +23,4 @@ is($hits, 14, "number of cache hits is as expected");
 is($misses, 0, "number of cache misses is reset by query");
 is($hits, 0, "number of cache hits is reset y query");
 
-done-testing;
+# vim: expandtab shiftwidth=4

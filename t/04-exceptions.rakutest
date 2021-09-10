@@ -23,4 +23,4 @@ my $cache2 = Cache::Async.new(producer => sub ($k) {
 
 dies-ok({ await $cache2.get("?") }, "exceptions get propagated from promise-returning producer");
 
-done-testing;
+# vim: expandtab shiftwidth=4

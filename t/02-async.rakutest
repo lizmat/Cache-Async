@@ -18,4 +18,4 @@ ok((await $pb) eq "[b]", "cache returned expected result for key b");
 
 ok($trace eq "0ba" || $trace eq "0ab", "cache gets returned with futures before they were fullfilled");
 
-done-testing;
+# vim: expandtab shiftwidth=4

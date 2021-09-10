@@ -34,4 +34,4 @@ ok((! defined await $cache.get('nokey')), 'Nil returned for special case');
 ok((! defined await $cache.get('nokey')), 'Nil returned for special case');
 is($producer-count, 3, 'Producer called expected number of times');
 
-done-testing;
+# vim: expandtab shiftwidth=4
