@@ -2,5 +2,8 @@ Revision history for Cache-Async
 
 {{$NEXT}}
 
+0.3.1  2021-09-10T18:20:24+02:00
+    - Some small fixes and flappy tests disabled
+
 0.3.0  2021-09-10T17:55:51+02:00
     - Initial version by Elizabeth Mattijsen

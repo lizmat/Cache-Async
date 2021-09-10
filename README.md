@@ -50,7 +50,7 @@ Upcoming Features
 BLOG
 ====
 
-I also have a short article that cache users might find interesting [https://github.com/Raku/CCR/blob/main/Remaster/Robert%20Lemmen/The%20Surprising%20Sanity%20of%20Using%20a%20Cache%20but%20Not%20Updating%20It.md](The Surprising Sanity of Using a Cache but Not Updating It).
+I also have a short article that cache users might find interesting [The Surprising Sanity of Using a Cache but Not Updating It](https://github.com/Raku/CCR/blob/main/Remaster/Robert%20Lemmen/The%20Surprising%20Sanity%20of%20Using%20a%20Cache%20but%20Not%20Updating%20It.md).
 
 DESCRIPTION
 ===========

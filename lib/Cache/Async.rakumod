@@ -1,4 +1,4 @@
-unit class Cache::Async:ver<0.3.0>:auth<zef:lizmat>;
+unit class Cache::Async:ver<0.3.1>:auth<zef:lizmat>;
 
 =begin pod
 
@@ -49,7 +49,7 @@ say await $cache.get('key234');
 
 =head1 BLOG
 
-I also have a short article that cache users might find interesting L<https://github.com/Raku/CCR/blob/main/Remaster/Robert%20Lemmen/The%20Surprising%20Sanity%20of%20Using%20a%20Cache%20but%20Not%20Updating%20It.md|The Surprising Sanity of Using a Cache but Not Updating It>.
+I also have a short article that cache users might find interesting L<The Surprising Sanity of Using a Cache but Not Updating It|https://github.com/Raku/CCR/blob/main/Remaster/Robert%20Lemmen/The%20Surprising%20Sanity%20of%20Using%20a%20Cache%20but%20Not%20Updating%20It.md>.
 
 =head1 DESCRIPTION
 
