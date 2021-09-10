@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/lizmat/raku-cache-async/workflows/test/badge.svg)](https://github.com/lizmat/raku-cache-async/actions)
+[![Actions Status](https://github.com/lizmat/Cache-Async/workflows/test/badge.svg)](https://github.com/lizmat/Cache-Async/actions)
 
 NAME
 ====
