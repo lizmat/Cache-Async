@@ -17,11 +17,11 @@
   },
   "resources": [
   ],
-  "source-url": "git://github.com/lizmat/raku-cache-async.git",
+  "source-url": "https://github.com/lizmat/Cache-Async.git",
   "tags": [
   ],
   "test-depends": [
     "Test::META"
   ],
-  "version": "0.3.1"
+  "version": "0.3.2"
 }

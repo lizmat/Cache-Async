@@ -2,6 +2,12 @@ Revision history for Cache-Async
 
 {{$NEXT}}
 
+0.3.2  2024-06-24T20:45:44+02:00
+    - Clean up code a bit
+    - Clean up pod a bit
+    - Add sponsor link and button
+    - Update copyright year
+
 0.3.1  2021-09-10T18:20:24+02:00
     - Some small fixes and flappy tests disabled
 
