@@ -1,7 +1,9 @@
 Revision history for Cache-Async
 
 {{$NEXT}}
-    - Get rid of Test::META dependency
+
+0.3.3  2024-06-24T21:28:37+02:00
+    - Get rid of Test::META dependency: now dependency free
 
 0.3.2  2024-06-24T20:45:44+02:00
     - Clean up code a bit
