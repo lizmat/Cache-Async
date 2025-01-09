@@ -1,6 +1,8 @@
 Revision history for Cache-Async
 
 {{$NEXT}}
+
+0.3.4  2025-01-09T19:23:29+01:00
     - Add CI badge for each OS
     - Update copyright year
 
