@@ -1,6 +1,8 @@
 Revision history for Cache-Async
 
 {{$NEXT}}
+    - Add CI badge for each OS
+    - Update copyright year
 
 0.3.3  2024-06-24T21:28:37+02:00
     - Get rid of Test::META dependency: now dependency free

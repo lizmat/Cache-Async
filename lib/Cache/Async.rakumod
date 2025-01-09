@@ -510,7 +510,9 @@ method hits-misses() {
 
 =head1 AUTHORS
 
-Robert Lemmen (2018-2020), Elizabeth Mattijsen <liz@raku.rocks> (2021-)
+Robert Lemmen
+
+Elizabeth Mattijsen
 
 Source can be located at: https://github.com/lizmat/Cache-Async . Comments and
 Pull Requests are welcome.
@@ -521,7 +523,9 @@ deal to me!
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2020 Robert Lemmen, 2021, 2024 Elizabeth Mattijsen
+Copyright 2018-2020 Robert Lemmen
+
+Copyright 2021, 2024, 2025 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
